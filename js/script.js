@@ -1,4 +1,5 @@
 const template = document.querySelector('template');
+// Clones del template definido en index.html
 const clontemplate1 = template.content.cloneNode(true);
 const clontemplate2 = template.content.cloneNode(true);
 const clontemplate3 = template.content.cloneNode(true);
@@ -8,12 +9,12 @@ const section1 = document.getElementById('section1');
 const sectioncentral = document.getElementById('sectioncentral');
 const section2 = document.getElementById('section2');
 
+// Contenido para cada uno de los templates
 clontemplate1.querySelector('article').id = "supervisorArticle";
 clontemplate1.querySelector('h2').innerHTML = "Supervisor";
 clontemplate1.querySelector('p').innerHTML = "Monitors activity to identify proyect roadblocks";
 clontemplate1.querySelector('img').src = "images/icon-supervisor.svg";
 clontemplate1.querySelector('img').alt = "supervisor";
-
 
 clontemplate2.querySelector('article').id = "supervisorTeamBuilder";
 clontemplate2.querySelector('h2').innerHTML = "Team Builder";
@@ -33,7 +34,7 @@ clontemplate4.querySelector('p').innerHTML = "Uses data from past proyects to pr
 clontemplate4.querySelector('img').src = "images/icon-calculator.svg";
 clontemplate4.querySelector('img').alt = "calculator";
 
-
+// Adjunto nodo template a su correspondiente elemento section
 section1.appendChild(clontemplate1);
 sectioncentral.appendChild(clontemplate2);
 sectioncentral.appendChild(clontemplate3);
